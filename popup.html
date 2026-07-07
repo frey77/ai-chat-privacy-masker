@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JSON Privacy Masker</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div>
+          <h1>隐私打码助手</h1>
+          <p>默认全打码，支持树状展开、搜索与敏感字段提醒。</p>
+        </div>
+        <span id="modeBadge" class="badge">等待输入</span>
+      </header>
+
+      <section class="panel controls">
+        <label class="field">
+          <span>输入内容</span>
+          <textarea id="input" placeholder='粘贴 JSON 或报错文本，例如：{"token":"abc123","user":{"phone":"13800138000"}}'></textarea>
+        </label>
+
+        <div class="inline-grid">
+          <label class="field">
+            <span>前缀</span>
+            <input id="showStart" type="number" min="0" max="20" value="3">
+          </label>
+          <label class="field">
+            <span>后缀</span>
+            <input id="showEnd" type="number" min="0" max="20" value="2">
+          </label>
+          <label class="field">
+            <span>掩码</span>
+            <input id="maskChar" type="text" maxlength="1" value="*">
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="maskAll" type="button">全打码</button>
+          <button id="unmaskAll" type="button">全放行</button>
+          <button id="copyOutput" type="button" class="primary">复制结果</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title">
+          <h2>字段树</h2>
+          <span id="treeHint" class="hint">默认全部展开</span>
+        </div>
+        <div class="tree-toolbar">
+          <input id="searchInput" type="text" placeholder="搜索字段名或路径，例如 token / user.phone">
+          <span id="searchMeta" class="tree-meta-badge">未搜索</span>
+        </div>
+        <div id="fieldList" class="field-tree empty">JSON 解析成功后，会在这里显示可勾选的字段树。</div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title">
+          <h2>处理结果</h2>
+          <span id="status" class="status">未处理</span>
+        </div>
+        <pre id="output" class="output"></pre>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+  </html>

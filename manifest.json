@@ -1,0 +1,10 @@
+﻿{
+  "manifest_version": 3,
+  "name": "AI 对话脱敏助手",
+  "version": "0.1.0",
+  "description": "Mask JSON and error text before sharing them with AI tools like ChatGPT and Codex.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Chat Privacy Masker"
+  }
+}
