@@ -1,0 +1,108 @@
+﻿<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="140" y1="80" x2="1040" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6EC"/>
+      <stop offset="1" stop-color="#F4E6D6"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFDF9"/>
+      <stop offset="1" stop-color="#FFF3E6"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="360" y1="120" x2="900" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C95C35"/>
+      <stop offset="1" stop-color="#A84421"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1200" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#8E5A34" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" rx="40" fill="url(#bg)"/>
+  <circle cx="1020" cy="120" r="150" fill="#F3D7BF" fill-opacity="0.72"/>
+  <circle cx="140" cy="650" r="120" fill="#F8E6D6"/>
+  <g filter="url(#shadow)">
+    <rect x="96" y="80" width="1008" height="600" rx="28" fill="url(#panel)"/>
+  </g>
+  <rect x="96" y="80" width="1008" height="600" rx="28" stroke="#E4CDB7"/>
+  <rect x="96" y="80" width="1008" height="72" rx="28" fill="#F7E7D7"/>
+  <circle cx="138" cy="116" r="10" fill="#E39B7E"/>
+  <circle cx="170" cy="116" r="10" fill="#EFC3A6"/>
+  <circle cx="202" cy="116" r="10" fill="#E7B18D"/>
+  <text x="244" y="123" fill="#2A1F18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700">AI 对话脱敏助手</text>
+  <text x="244" y="150" fill="#7C6D61" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="16">Mask JSON and logs before sharing them with ChatGPT and Codex</text>
+
+  <rect x="132" y="186" width="412" height="454" rx="24" fill="#FFF9F2" stroke="#E5D4C3"/>
+  <text x="160" y="228" fill="#2A1F18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">输入内容</text>
+  <rect x="160" y="248" width="356" height="194" rx="16" fill="#FFFFFF" stroke="#DCC6B1"/>
+  <text x="182" y="286" fill="#8E6E59" font-family="Cascadia Code, Consolas, monospace" font-size="17">{</text>
+  <text x="198" y="318" fill="#8E6E59" font-family="Cascadia Code, Consolas, monospace" font-size="17">&quot;token&quot;: &quot;abc123456789&quot;,</text>
+  <text x="198" y="350" fill="#8E6E59" font-family="Cascadia Code, Consolas, monospace" font-size="17">&quot;user&quot;: {</text>
+  <text x="220" y="382" fill="#8E6E59" font-family="Cascadia Code, Consolas, monospace" font-size="17">&quot;phone&quot;: &quot;13800138000&quot;,</text>
+  <text x="220" y="414" fill="#8E6E59" font-family="Cascadia Code, Consolas, monospace" font-size="17">&quot;name&quot;: &quot;张三&quot;</text>
+  <text x="198" y="446" fill="#8E6E59" font-family="Cascadia Code, Consolas, monospace" font-size="17">}</text>
+  <text x="182" y="478" fill="#8E6E59" font-family="Cascadia Code, Consolas, monospace" font-size="17">}</text>
+
+  <rect x="160" y="468" width="108" height="72" rx="16" fill="#FFF" stroke="#DCC6B1"/>
+  <rect x="284" y="468" width="108" height="72" rx="16" fill="#FFF" stroke="#DCC6B1"/>
+  <rect x="408" y="468" width="108" height="72" rx="16" fill="#FFF" stroke="#DCC6B1"/>
+  <text x="178" y="494" fill="#7C6D61" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">前缀</text>
+  <text x="302" y="494" fill="#7C6D61" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">后缀</text>
+  <text x="426" y="494" fill="#7C6D61" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">掩码</text>
+  <text x="205" y="526" fill="#2A1F18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700">3</text>
+  <text x="329" y="526" fill="#2A1F18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700">2</text>
+  <text x="453" y="526" fill="#2A1F18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700">*</text>
+
+  <rect x="160" y="560" width="108" height="44" rx="22" fill="#F0E1D1"/>
+  <rect x="280" y="560" width="108" height="44" rx="22" fill="#F0E1D1"/>
+  <rect x="400" y="560" width="116" height="44" rx="22" fill="url(#accent)"/>
+  <text x="186" y="589" fill="#2A1F18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="700">全打码</text>
+  <text x="302" y="589" fill="#2A1F18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="700">全放行</text>
+  <text x="421" y="589" fill="#FFF9F3" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="700">复制结果</text>
+
+  <rect x="572" y="186" width="496" height="214" rx="24" fill="#FFF9F2" stroke="#E5D4C3"/>
+  <text x="600" y="228" fill="#2A1F18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">字段树</text>
+  <rect x="896" y="198" width="144" height="32" rx="16" fill="#F2E2D1"/>
+  <text x="922" y="219" fill="#7C6D61" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">默认全部展开</text>
+  <rect x="600" y="248" width="440" height="42" rx="14" fill="#FFF" stroke="#DCC6B1"/>
+  <text x="620" y="275" fill="#9A7F6B" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="16">搜索字段名或路径，例如 token / user.phone</text>
+  <rect x="952" y="255" width="72" height="28" rx="14" fill="#EFE6DB"/>
+  <text x="972" y="274" fill="#7C6D61" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="700">2 匹配</text>
+
+  <line x1="626" y1="312" x2="626" y2="378" stroke="#E1C7B1" stroke-dasharray="4 4"/>
+  <line x1="656" y1="344" x2="656" y2="378" stroke="#E1C7B1" stroke-dasharray="4 4"/>
+  <rect x="600" y="304" width="440" height="36" rx="12" fill="#FBF2E8"/>
+  <polygon points="614,319 626,319 620,329" fill="#826955"/>
+  <rect x="640" y="314" width="16" height="16" rx="3" fill="#2C78F6"/>
+  <path d="M644 322.5L648 326.5L654 318.5" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="670" y="327" fill="#2A1F18" font-family="Cascadia Code, Consolas, monospace" font-size="16">user</text>
+  <rect x="720" y="311" width="60" height="20" rx="10" fill="#FFE8D8"/>
+  <text x="736" y="325" fill="#A94D24" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="700">敏感</text>
+  <text x="980" y="327" fill="#7C6D61" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="14">2 fields</text>
+
+  <rect x="630" y="340" width="410" height="34" rx="10" fill="#FFF"/>
+  <rect x="670" y="349" width="16" height="16" rx="3" fill="#2C78F6"/>
+  <path d="M674 357.5L678 361.5L684 353.5" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="700" y="362" fill="#A94D24" font-family="Cascadia Code, Consolas, monospace" font-size="15" font-weight="700">phone</text>
+  <rect x="760" y="346" width="60" height="20" rx="10" fill="#FFE8D8"/>
+  <text x="776" y="360" fill="#A94D24" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="700">敏感</text>
+  <text x="935" y="362" fill="#8A6E59" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="14">1380013...</text>
+
+  <rect x="630" y="378" width="410" height="34" rx="10" fill="#FFF"/>
+  <rect x="670" y="387" width="16" height="16" rx="3" fill="#2C78F6"/>
+  <path d="M674 395.5L678 399.5L684 391.5" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="700" y="400" fill="#A94D24" font-family="Cascadia Code, Consolas, monospace" font-size="15" font-weight="700">name</text>
+  <rect x="752" y="384" width="60" height="20" rx="10" fill="#FFE8D8"/>
+  <text x="768" y="398" fill="#A94D24" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="700">敏感</text>
+  <text x="985" y="400" fill="#8A6E59" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="14">张*</text>
+
+  <rect x="572" y="428" width="496" height="212" rx="24" fill="#1F1B17"/>
+  <text x="600" y="470" fill="#FFF3E8" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">处理结果</text>
+  <rect x="958" y="438" width="82" height="30" rx="15" fill="#DCEEDD"/>
+  <text x="981" y="458" fill="#245F43" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="700">已处理</text>
+  <text x="604" y="512" fill="#F9EAD7" font-family="Cascadia Code, Consolas, monospace" font-size="17">{</text>
+  <text x="622" y="544" fill="#F9EAD7" font-family="Cascadia Code, Consolas, monospace" font-size="17">&quot;token&quot;: &quot;abc******89&quot;,</text>
+  <text x="622" y="576" fill="#F9EAD7" font-family="Cascadia Code, Consolas, monospace" font-size="17">&quot;user&quot;: {</text>
+  <text x="644" y="608" fill="#F9EAD7" font-family="Cascadia Code, Consolas, monospace" font-size="17">&quot;phone&quot;: &quot;138******00&quot;,</text>
+  <text x="644" y="640" fill="#F9EAD7" font-family="Cascadia Code, Consolas, monospace" font-size="17">&quot;name&quot;: &quot;张*&quot;</text>
+  <text x="622" y="672" fill="#F9EAD7" font-family="Cascadia Code, Consolas, monospace" font-size="17">}</text>
+  <text x="604" y="704" fill="#F9EAD7" font-family="Cascadia Code, Consolas, monospace" font-size="17">}</text>
+</svg>
