@@ -1,73 +1,85 @@
 ﻿# AI Chat Privacy Masker
 
-AI Chat Privacy Masker is a lightweight Chrome/Edge extension that helps you redact JSON, logs, and error messages before sending them to AI tools such as ChatGPT and Codex.
+> AI 对话脱敏助手
 
-中文名：AI 对话脱敏助手
+AI Chat Privacy Masker is a lightweight Chrome / Edge extension for redacting JSON, logs, and error messages before sharing them with AI tools like ChatGPT and Codex.
 
-## Why This Project
+## Why
 
-When we paste debugging data into AI tools, it is easy to accidentally expose private or sensitive information such as tokens, phone numbers, ID fields, user names, cookies, or session values. This extension adds a quick local step before sharing:
+When debugging with AI, it is easy to paste sensitive data by accident:
 
-- Paste JSON or plain error text
-- Mask everything by default
-- Keep a few prefix/suffix characters for debugging
-- Unmask only the fields you decide are safe
-- Search the field tree and review sensitive fields visually
+- access tokens and cookies
+- phone numbers and email addresses
+- ID card fields and real names
+- session values, user IDs, and internal error payloads
+
+This extension adds a local review step before you share anything with AI.
+
+## Screenshots
+
+### Popup UI
+
+![Popup UI](assets/screenshots/field-tree-search.png)
 
 ## Features
 
-- Default full masking for all JSON leaf fields
-- Tree-based field selection with expand/collapse interaction
-- Search by field name or path
-- Sensitive field highlighting for keys like `token`, `authorization`, `phone`, `email`, `idcard`, `name`, and `userid`
-- Partial masking with configurable prefix and suffix lengths
-- Plain-text fallback mode for logs and error messages
-- One-click copy of the redacted result
-- Fully local workflow in the browser popup
+- Mask all JSON leaf fields by default
+- Keep a configurable prefix and suffix for easier debugging
+- Review fields in a tree view with expand / collapse interaction
+- Search by field name or JSON path
+- Highlight likely sensitive keys such as `token`, `authorization`, `phone`, `email`, `idcard`, `name`, and `userid`
+- Fall back to plain-text line masking when the input is not valid JSON
+- Copy the sanitized result with one click
+- Run fully locally in the browser popup
 
-## Use Cases
+## Typical Use Cases
 
-- Share backend API responses with ChatGPT safely
-- Paste frontend error payloads into Codex without exposing user data
-- Sanitize logs before creating bug reports
-- Review third-party JSON payloads before team sharing
+- Share API responses with ChatGPT without leaking user data
+- Paste frontend error payloads into Codex more safely
+- Sanitize bug reports before sending them to teammates or external tools
+- Review third-party JSON payloads before using them in AI prompts
 
 ## Installation
 
-1. Open Chrome or Edge.
-2. Visit the extensions page.
-3. Enable Developer Mode.
-4. Click Load unpacked.
-5. Select this project folder.
+### Chrome / Edge unpacked install
+
+1. Open the browser extensions page.
+2. Enable Developer Mode.
+3. Click `Load unpacked`.
+4. Select this project folder.
 
 ## How To Use
 
 1. Click the extension icon.
 2. Paste JSON, logs, or error text.
-3. Review the tree view. Everything is masked by default.
-4. Search fields if needed.
+3. Review the field tree. Everything is masked by default.
+4. Search for a field or path if needed.
 5. Uncheck fields that are safe to reveal.
-6. Copy the sanitized output and send it to your AI tool.
+6. Copy the redacted output and send it to your AI tool.
 
 ## Project Structure
 
 ```text
 ai-chat-privacy-masker/
+├─ assets/
+│  ├─ icons/
+│  └─ screenshots/
 ├─ manifest.json
 ├─ popup.html
 ├─ popup.css
 ├─ popup.js
 ├─ README.md
+├─ CHANGELOG.md
 ├─ LICENSE
 └─ .gitignore
 ```
 
 ## Roadmap
 
-- Add keyword highlighting inside search matches
-- Add an Only show sensitive fields toggle
+- Highlight matched search keywords inside field names
+- Add an `Only show sensitive fields` toggle
 - Add context-menu support for selected text
-- Add quick paste-to-input integration for AI websites
+- Add direct paste integration for AI chat websites
 
 ## License
 

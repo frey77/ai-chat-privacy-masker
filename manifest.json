@@ -3,8 +3,19 @@
   "name": "AI 对话脱敏助手",
   "version": "0.1.0",
   "description": "Mask JSON and error text before sharing them with AI tools like ChatGPT and Codex.",
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "AI Chat Privacy Masker"
+    "default_title": "AI Chat Privacy Masker",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png",
+      "48": "assets/icons/icon-48.png"
+    }
   }
 }
